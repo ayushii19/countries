@@ -10,7 +10,7 @@
   align-items: center;
   margin:10px;
   border : 1px solid black;
-  background-color: whitesmoke;
+  background-color: rgb(217, 217, 217);
 
   &__card {
     // height:200px;
@@ -19,7 +19,7 @@
     display: flex;
     align-items:flex-start;
     justify-content: space-between;
-    background-color:rosybrown;
+    background-color: rosybrown;
     margin:10px;
     border : 1px solid black;
     padding:10px;
@@ -28,7 +28,7 @@
       display: flex;
       flex-direction: column;
       margin-right: 10px;
-
+  
       &__name{
         font-weight: bolder;
         font-size: 40px;
