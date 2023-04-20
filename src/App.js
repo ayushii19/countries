@@ -85,7 +85,7 @@ class App extends React.Component {
           <div className="maincontent__subjectarea__inputarea">
             <input type="text" className="maincontent__subjectarea__inputarea__text" placeholder="Enter keywords for countries" onChange={(e) => this.setState({inputValue : e.target.value})}/>
             <button
-              type="submit" className="maincontent__subjectarea__inputarea__button" onClick={(e)=> {this.state.inputValue ? this.handleChange(e) : alert("please enter the country")}}>SEARCH</button>
+              type="submit" className="maincontent__subjectarea__inputarea__button" onClick={(e)=> {this.state.inputValue ? this.handleChange(e) : alert("PLEASE ENTER THE COUNTRY.")}}>SEARCH</button>
             
           </div>
         </div>
