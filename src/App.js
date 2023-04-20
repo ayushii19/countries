@@ -117,7 +117,7 @@ class App extends React.Component {
                    {item.flags.alt && <span>Info : {item.flags.alt}</span>}
                    {!item.flags.alt && <span>Info : "No Information Found"</span>}
                 </div>
-                
+
                 <div className="maincontent__card__info__languages">
                     Languages :{languageString}
                   </div>
