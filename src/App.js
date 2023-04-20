@@ -23,6 +23,7 @@ class App extends React.Component {
   }
 
   handleChange=()=>{
+    // console.log(isEmpty(this.state.inputValue));
     // const searchKey = this.state.inputValue;
     // const url = `https://restcountries.com/v3.1/name/${ searchKey }?fullText=true`;
 
@@ -50,6 +51,10 @@ class App extends React.Component {
         });
       }
     });
+
+    // handleAlert = () => {
+    //   alert("Please enter the value")
+    // }
 
 
   // data.filter((item)=> 
@@ -80,7 +85,8 @@ class App extends React.Component {
           <div className="maincontent__subjectarea__inputarea">
             <input type="text" className="maincontent__subjectarea__inputarea__text" placeholder="Enter keywords for countries" onChange={(e) => this.setState({inputValue : e.target.value})}/>
             <button
-              type="submit" className="maincontent__subjectarea__inputarea__button" onClick={(e)=>this.handleChange(e)}>SEARCH</button>
+              type="submit" className="maincontent__subjectarea__inputarea__button" onClick={(e)=> {this.state.inputValue ? this.handleChange(e) : alert("please enter the country")}}>SEARCH</button>
+            
           </div>
         </div>
         {data.map((item, itemIndex) => {
