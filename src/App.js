@@ -11,16 +11,16 @@ class App extends React.Component {
     };
   }
 
-  componentDidMount() {
-    let a = fetch("https://restcountries.com/v3.1/all");
-    a.then((value1) => {
-      return value1.json();
-    }).then((value2) => {
-      this.setState({
-        data: value2,
-      });
-    });
-  }
+  // componentDidMount() {
+  //   let a = fetch("https://restcountries.com/v3.1/all");
+  //   a.then((value1) => {
+  //     return value1.json();
+  //   }).then((value2) => {
+  //     this.setState({
+  //       data: value2,
+  //     });
+  //   });
+  // }
 
   handleChange=()=>{
     // console.log(isEmpty(this.state.inputValue));
@@ -74,9 +74,7 @@ class App extends React.Component {
     return (
       <div className="maincontent">
         <div className="maincontent__heading">
-          <h1>
-            <u>FIND COUNTRIES</u>
-          </h1>
+          <h1><u>FIND COUNTRIES</u></h1>
         </div>
         <div className="maincontent__subjectarea">
           <div className="maincontent__subjectarea__text">
@@ -89,7 +87,7 @@ class App extends React.Component {
             
           </div>
         </div>
-        {data.map((item, itemIndex) => {
+        { data.map((item, itemIndex) => {
 
           const language = [];
 
